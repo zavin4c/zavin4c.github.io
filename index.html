@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <h1>Aiming time calculator</h1>
+    <div class="config" width="100%">
+      <label for="dispersion_current">Current dispersion: </label>
+      <input type="text" id="dispersion_current"><br><br>
+      <label for="dispersion_base">Base dispersion: </label>
+      <input type="text" id="dispersion_base"><br><br>
+      <label for="dispersion_moving">Dispersion when moving: </label>
+      <input type="text" id="dispersion_moving"><br><br>
+      <label for="dispersion_traverse">Dispersion when traversing hull: </label>
+      <input type="text" id="dispersion_traverse"><br><br>
+      <label for="dispersion_turret">Dispersion when traversing turret: </label>
+      <input type="text" id="dispersion_turret"><br><br>
+      <label for="aimtime">Aim time: </label>
+      <input type="text" id="aimtime"><br><br>
+      <label for="crew_skill">Crew skill percentage: </label>
+      <input type="text" id="crew_skill"><br><br>
+      <label for="commander_bonus">Commander bonus applied? </label>
+      <input type="checkbox" id="commander_bonus" checked><br><br>
+      <label for="brothers_in_arms">Brothers in arms: </label>
+      <input type="checkbox" id="brothers_in_arms" checked><br><br>
+      <label for="premium_consumables">Premium consumables: </label>
+      <input type="checkbox" id="premium_consumables"><br><br>
+      <input type="submit" value="Calculate">
+
+    </div>
+    <div>
+      <canvas id="mainChart"></canvas>
+    </div>
+  </body>
+
+</html>
