@@ -41,7 +41,7 @@ Chart.register({
     }
   }
 });
-
+const ctx = document.getElementById('mainChart').getContext('2d');
 const myChart = new Chart(
   document.getElementById('mainChart'),
   config
